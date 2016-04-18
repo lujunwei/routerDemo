@@ -1,0 +1,16 @@
+{
+  "name": "handlebars",
+  "version": "0.0.1",
+  "description": "根据工具将碎片生成完整的html",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "handlebars"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "~3.9.0",
+    "gulp-compile-handlebars": "^0.5.0"
+  }
+}

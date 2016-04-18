@@ -1,0 +1,114 @@
+@charset "UTF-8";
+@import "variables";
+@import "sprite";
+@import "../../../sass/reset";
+@import "../../../sass/func";
+html,
+body {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+* {
+	box-sizing: border-box;
+}
+.wrapper {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	background-color: #e9f6fe;
+}
+.header {
+	width: 100%;
+	height: auto;
+	position: relative;
+	color: #fff;
+	text-align: center;
+	padding-top: pxToRem(32px);
+	padding-left: pxToRem(70px);
+	margin-bottom: pxToRem(54px);
+	.header-bg {
+		width: pxToRem(641px);
+		height: pxToRem(525px);
+		position: relative;
+		top: 0;
+		left: 0;
+		z-index: 1;
+	  background-size: cover;
+	  background-image: url("../images/inviteRule_header.png");
+	  background-repeat: no-repeat;
+  }
+}
+.rule {
+	.rule-title {
+		position: relative;
+		font-size: pxToRem(30px);
+		height: pxToRem(57px);
+		line-height: pxToRem(53px);
+		text-align: center;
+		color: #fff;
+		font-weight: bold;
+		margin-bottom: pxToRem(30px);
+		.rule-title-bg {
+			background-size: contain;
+		  background-image: url("../images/rule_title_bg.png");
+		  background-repeat: no-repeat;
+			background-position: 50%;
+			height: 100%;
+			width: 100%;
+		}
+		label {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			-moz-transform:translateX(-50%); 	/* Firefox */
+			-webki-transform: translateX(-50%);
+			transform: translateX(-50%);
+			margin-left: pxToRem(12px)
+		}
+	}
+
+	.rule-list {
+    padding: 0 pxToRem(20px);
+    .rule-item {
+    	color: #585858;
+    	font-size: pxToRem(26px);
+      display:-moz-box;
+      display:-webkit-box;
+      display:box;
+      margin-bottom: pxToRem(16px);
+    }
+    .rule-icon {
+      background-color: #fed586;
+      width: pxToRem(38px);
+      height: pxToRem(38px);
+      border-radius: pxToRem(38px);
+      font-size: pxToRem(26px);
+      font-weight: bold;
+      color: #fff;
+      text-align: center;
+      line-height: pxToRem(38px);
+    }
+    .rule-text {
+      margin-left: pxToRem(14px);
+      word-wrap: break-word;
+      word-break: break-word;
+      line-height: pxToRem(38px);
+      width: pxToRem(650px);
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+}
+.triple-gifts {
+	color: #ffb31f;
+	text-decoration: underline
+}
